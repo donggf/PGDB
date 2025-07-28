@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Probiotic Gene Database</title>
+    <link rel="stylesheet" href="../static/css/tutorial_styles.css"> <!-- 确保CSS路径正确 -->
+</head>
+<body>
+
+<div align="center" style="margin-top:0px;padding-top:0px;">
+    <div class="sub_holder" style="height:80px;padding-left:40px;background-color: #f5f5f5;margin-top:0px;padding-top:0px;">
+        <div id="logo_holder" style="margin-bottom:0px;padding-top:5px;margin-top:0px;">
+            <a href="index.html"><img src="../static/images/logo_pg.jpg" id="logo" align="left" width="170" border="0"></a>
+        </div>
+        <h1 style="position: relative; left: -60px !important; padding-top:0px; margin-top:0px; color:#000000; font-size:25px; line-height:70px; font-family: Garamond, Times New Roman, Times, serif;">
+            Probiotic Gene Database
+        </h1>
+    </div>
+</div>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/browse">Browse</a>
+    <a href="/submit">Submit</a>
+    <a href="/blast">Analysis</a>
+    <a href="/model">Prediction</a>
+    <a href="/download">Download</a>
+    <a href="/tutorial" class="active">Tutorial</a> 
+    <a href="/about">About</a> 
+</div>
+
+<div class="container" >
+    <div class="data-frame">
+        <h1>Home page</h1>
+        <p>
+            The home page (Figure 1), users can choose to retrieve content based on the drop-down list, search by gene name (e.g. argC), function description (e.g. antagonists), species (e.g. Bifidobacterium longum), DOI.<br>
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/home.png" border="0" width="600"><br>
+            Figure 1. Search the database.
+        </p>
+        <p>
+            The system will present the search results based on the search content, and the search results will be classified by gene names (Figure 2).<br>
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/search_argC.png" border="0" width="600" height="310"><br>
+            Figure 2. Search results.
+        </p>
+        <h1>Browse page</h1>
+        <p>
+            The Browse page (Figure 3) shows the main fields of all data in the database.
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/browse.png" border="0" width="600"><br>
+            Figure 3. Browse the main data.
+        </p>
+        <p>
+            Click on the link on each gene name to view all detailed information about that gene (Figure 4).
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/atpC_details.png" border="0" width="600"><br>
+            Figure 4. Detailed information on the argC gene.
+        </p>
+        <h1>Submit page</h1>
+        <p>
+            Users can upload certified probiotic gene data on this page (Figure 5), with mandatory fields marked with *.
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/submit.png" border="0" width="600"><br>
+            Figure 5. Submit information.
+        </p>
+        <h1>Analysis page</h1>
+        <p>
+            On the analysis page, the blast and blast tools provided by NCBI are embedded, allowing users to choose which tool to use and upload and analyze their own data. (Figure 6).
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/analysis.png" border="0" width="600"><br>
+            Figure 6. Analysis page.
+        </p>
+        <p>
+            This page displays an example of the results analyzed using the blast tool. (Figure 7).
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/analysis_results.png" border="0" width="600"><br>
+            Figure 7. Display of analysis results.
+        </p>
+
+        <h1>Prediction page</h1>
+        <p>
+            This page displays the start and end dates for searching papers by entering them (default is today). The RA-HGATSE model in the system will automatically process papers within this time period and return the predicted results later. (Figure 8).
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/prediction.png" border="0" width="600"><br>
+            Figure 8. Prediction page.
+        </p>
+
+
+        <h1>Download page</h1>
+        <p>
+            This page displays the database versions of the past dynasties and provides a link to download the data in this database. (Figure 9).
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/download.png" border="0" width="600"><br>
+            Figure 9. Download page.
+        </p>
+    </div>
+</div>
+
+<footer style="background-color: white; color: black; display: flex; align-items: center; justify-content: center;">
+    <p style="margin: 0; margin-right: 10px;">Copyright &copy; 2024&nbsp;&nbsp;
+        <a href="http://www.dong-group.cn/" target="_blank" style="color: blue; text-decoration: none;">Dong's Group</a>&nbsp;&nbsp;
+
+        <a href="https://kyc.imau.edu.cn/info/1250/4468.htm" target="_blank" style="color: blue; text-decoration: none;">Heping Zhang's Team</a>
+
+    </p>
+    <!-- <img src="../static/images/lab.jpg" alt="Lab Image" style="width:100px; height:auto;"> -->
+</footer>
+
+</body>
+</html>

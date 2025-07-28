@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Probiotic Gene Database</title>
+  <link rel="stylesheet" href="../static/css/submit_styles.css">
+
+</head>
+
+<div align="center" style="margin-top:0px;padding-top:0px;">
+  <div class="sub_holder" style="height:80px;padding-left:40px;background-color: #f5f5f5;margin-top:0px;padding-top:0px;">
+      <div id="logo_holder" style="margin-bottom:0px;padding-top:5px;margin-top:0px;">
+          <a href="index.html"><img src="../static/images/logo_pg.jpg" id="logo" align="left" width="170" border="0"></a>
+      </div>
+      <h1 style="position: relative; left: -60px !important; padding-top:0px; margin-top:0px; color:#000000; font-size:25px; line-height:70px; font-family: Garamond, Times New Roman, Times, serif;">
+          Probiotic Gene Database
+      </h1>
+  </div>
+</div>
+
+
+
+<body>
+
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/browse">Browse</a>
+    <a href="/submit" class="active">Submit</a>
+    <a href="/blast">Analysis</a>
+    <a href="/model">Prediction</a>
+    <a href="/download">Download</a>
+    <a href="/tutorial">Tutorial</a> 
+    <a href="/about">About</a> 
+</div>
+
+<div class="container">
+  <h1>Submit</h1>
+	<p>Users can upload validated probiotic gene data on this page, and after verification, it will be included in the pgdb. </p>
+  
+  <form action="/submit_data" method="post" enctype="multipart/form-data">
+    <div class="form-container">
+      <div class="form-section your-information">
+        <h2>Your Information</h2>
+        <label for="name">Name<sup>*</sup></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <label for="email">Email<sup>*</sup></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+        <label for="institution">Institution</label>
+        <input type="text" id="institution" name="institution" placeholder="A certain university or research institute">
+      </div>
+      
+      <div id="pgdb-information-container">
+        <div class="form-section pgdb-information">
+          <h2>PGDB Information</h2>
+          
+          <label for="unique_id">Unique ID</label>
+          <input type="text" id="unique_id" name="unique_id" placeholder="Enter a unique identifier from uniprot or ncbi">
+          
+          <label for="sequence_source">Sequence Source</label>
+          <input type="text" id="sequence_source" name="sequence_source" placeholder="unique, ncbi,...">
+          
+          <label for="gene_name">Gene Name<sup>*</sup></label>
+          <input type="text" id="gene_name" name="gene_name" placeholder="Enter the gene name, such as atpC">
+          
+          <label for="function_description">Function Description<sup>*</sup></label>
+          <input type="text" id="function_description" name="function_description" placeholder="Functional description of input genes">
+          
+          <label for="species">Species<sup>*</sup></label>
+          <input type="text" id="species" name="species" placeholder="Species of genetic origin">
+          
+          <label for="exact_strain">Exact Strain<sup>*</sup></label>
+          <input type="text" id="exact_strain" name="exact_strain" placeholder="The exact strain of gene origin">
+          
+          <label for="doi">DOI<sup>*</sup></label>
+          <input type="text" id="doi" name="doi" placeholder="DOI number of the cited paper">
+          
+          <label for="amino_acid_sequence">Amino Acid Sequence OR Nucleotide Sequence<sup>*</sup></label>
+          <input type="text" id="amino_acid_sequence" name="amino_acid_sequence" placeholder="The Amino Acid Sequence or Nucleotide Sequence of this gene">
+          <label for="sequence_file" class="custom-file-upload">Choose File</label>  <!-- 自定义上传按钮 -->
+
+          <input type="file" id="sequence_file" name="sequence_file" accept=".txt, .fasta, .faa">
+          <small>Accepted formats: .txt, .fasta, .faa</small>
+
+
+          <label for="strict">Strict</label>
+          <input type="text" id="strict" name="strict" placeholder="Is it verified through gene knockout experiments? Yes, please enter strict; otherwise, enter lenient">
+        </div>
+      </div>
+      
+     
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<footer style="background-color: white; color: black; display: flex; align-items: center; justify-content: center;">
+  <p style="margin: 0; margin-right: 10px;">Copyright &copy; 2024&nbsp;&nbsp;
+      <a href="http://www.dong-group.cn/" target="_blank" style="color: blue; text-decoration: none;">Dong's Group</a>&nbsp;&nbsp;
+
+      <a href="https://kyc.imau.edu.cn/info/1250/4468.htm" target="_blank" style="color: blue; text-decoration: none;">Heping Zhang's Team</a>
+
+  </p>
+  <!-- <img src="../static/images/lab.jpg" alt="Lab Image" style="width:100px; height:auto;"> -->
+</footer>
+
+<script src="../static/js/submit.js"></script>
+
+</body>
+</html>
