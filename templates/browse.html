@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Probiotic Gene Database</title>
+<link rel="stylesheet" href="../static/css/browse_styles.css">
+
+</head>
+
+<body>
+
+  <div align="center" style="margin-top:0px;padding-top:0px;">
+    <div class="sub_holder" style="height:80px;padding-left:40px;background-color: #f5f5f5;margin-top:0px;padding-top:0px;">
+        <div id="logo_holder" style="margin-bottom:0px;padding-top:5px;margin-top:0px;">
+            <a href="index.html"><img src="../static/images/logo_pg.jpg" id="logo"  align="left" width="170" border="0"></a>
+        </div>
+        <h1 style="position: relative; left: -60px !important; padding-top:0px; margin-top:0px; color:#000000; font-size:25px; line-height:70px; font-family: Garamond, Times New Roman, Times, serif;">
+            Probiotic Gene Database
+        </h1>
+    </div>
+</div>
+
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/browse" class="active">Browse</a>
+  <a href="/submit">Submit</a>
+  <a href="/blast">Analysis</a>
+  <a href="/model">Prediction</a>
+  <a href="/download">Download</a>
+  <a href="/tutorial">Tutorial</a> 
+  <a href="/about">About</a> 
+</div>
+
+<div class="container">
+  <div class="scroll-box"> <!-- 新增滚动框 -->
+    <table>
+      <thead>
+        <tr>
+          <th>gene_id</th>
+          
+          <th>gene_name</th>
+          <th>function_description</th>
+          <th>species</th>
+          <th>exact_strain</th>
+          <th>doi</th>
+          
+          <th>type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JavaScript将在这里动态填充行 -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<footer style="background-color: white; color: black; display: flex; align-items: center; justify-content: center;">
+  <p style="margin: 0; margin-right: 10px;">Copyright &copy; 2024&nbsp;&nbsp;
+      <a href="http://www.dong-group.cn/" target="_blank" style="color: blue; text-decoration: none;">Dong's Group</a>&nbsp;&nbsp;
+
+      <a href="https://kyc.imau.edu.cn/info/1250/4468.htm" target="_blank" style="color: blue; text-decoration: none;">Heping Zhang's Team</a>
+
+  </p>
+  <!-- <img src="../static/images/lab.jpg" alt="Lab Image" style="width:100px; height:auto;"> -->
+</footer>
+
+<script src="../static/js/browse.js"></script>
+
+</body>
+</html>

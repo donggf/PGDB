@@ -1,0 +1,142 @@
+/* 基本页面风格 */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* 页面顶部的子容器风格 */
+.sub_holder {
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+/* 导航条风格 */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: left; /* 将导航链接向左对齐 */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 主容器风格 */
+.container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 单个基因信息区块的风格 */
+.gene-section {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.gene-section:last-child {
+    border-bottom: none;
+}
+
+/* Abstract文本两端对齐并包含在隐形数据框中 */
+.gene-section p.abstract {
+    text-align: justify;
+    border: 1px solid #ccc; /* 显示边框，如果需要隐形可以设置为背景色 */
+    padding: 10px; /* 添加一些内边距，确保文本不会紧贴边框 */
+    margin: 10px 0; /* 增加外边距，使布局更加美观 */
+    height: 150px; /* 设置一个固定高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+    background-color: #f9f9f9; /* 轻微的灰色背景，增强对比 */
+}
+
+
+
+/* 序列信息滚动条与自动换行 */
+.gene-section p.sequence {
+    height: 100px  ; /* 控制高度 */
+    overflow: auto;  /* 启用滚动条 */
+    white-space: pre-wrap ; /* 保留空白符并自动换行 */
+    word-wrap: break-word ; /* 允许长单词在边界处自动换行 */
+    border: 1px solid #ccc; /* 边框 */
+    padding: 10px; /* 内边距 */
+    margin-top: 0 ; /* 移除上边距 */
+    margin-bottom: 0 ; /* 移除下边距 */
+    display: block ; /* 设置为块级元素 */
+    background-color: #f9f9f9; /* 轻微的灰色背景，增强对比 */
+
+
+}
+
+.visible-text{
+    margin: 0 ; /* 移除上边距 */
+}
+
+.hidden-text{
+    margin: 0 ; /* 移除上边距 */
+
+}
+
+/* 序列信息内的span标签样式 */
+.gene-section .sequence span {
+    display: inline; /* span元素默认是内联的 */
+    margin: 0; /* 移除外边距 */
+    padding: 0; /* 移除内边距 */
+}
+
+/* 按钮样式 */
+.gene-section .sequence .toggle-button {
+    margin: 0; /* 移除按钮的外边距 */
+    padding: 5px 10px; /* 设置按钮的内边距 */
+    font-size: 0.8rem; /* 设置按钮的字体大小 */
+    vertical-align: top; /* 使按钮与文本垂直对齐 */
+}
+
+
+.feedback-btn {
+    padding: 5px 10px;
+    background-color: #007bff; /* 按钮背景色 */
+    color: white; /* 文字颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 5px; /* 圆角边框 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+    margin-left: 10px; /* 与其他内容的左边距 */
+  }
+
+
+  button.feedback-btn:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景色变化 */
+  }
+
+
+/* 底部页脚的风格 */
+footer {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: blue;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Probiotic Gene Database</title>
+    <link rel="stylesheet" href="../static/css/tutorial_styles.css"> <!-- 确保CSS路径正确 -->
+</head>
+<body>
+
+<div align="center" style="margin-top:0px;padding-top:0px;">
+    <div class="sub_holder" style="height:80px;padding-left:40px;background-color: #f5f5f5;margin-top:0px;padding-top:0px;">
+        <div id="logo_holder" style="margin-bottom:0px;padding-top:5px;margin-top:0px;">
+            <a href="index.html"><img src="../static/images/logo_pg.jpg" id="logo" align="left" width="170" border="0"></a>
+        </div>
+        <h1 style="position: relative; left: -60px !important; padding-top:0px; margin-top:0px; color:#000000; font-size:25px; line-height:70px; font-family: Garamond, Times New Roman, Times, serif;">
+            Probiotic Gene Database
+        </h1>
+    </div>
+</div>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/browse">Browse</a>
+    <a href="/submit">Submit</a>
+    <a href="/blast">Analysis</a>
+    <a href="/model">Prediction</a>
+    <a href="/download">Download</a>
+    <a href="/tutorial">Tutorial</a> 
+    <a href="/about" class="active">About</a> 
+</div>
+
+<div class="container" >
+    <div class="data-frame">
+        <h1>About</h1>
+        <p>
+            PGDB: Probiotic Gene Database. <br> 
+            In the current version, there are a total of 286 probiotic gene data, all from relevant research literature.<br>       
+        </p>
+        <p style="text-align:center;">
+            <img src="../static/images/workflow.png" border="0" width="900"><br>
+            Figure 1. Flowchart describing data collection, workflow and applications of PGDB.
+        </p>
+        <p>
+            Figure 1 shows the entire process of data collection, data filtering, database establishment, and website establishment.<br><br>
+            (i) Collect data, search for "probiotic gene" keywords on PubMed and Web of Science, remove review papers, and ensure that the articles contain bacterial gene names. Combine the two parts of the data and obtain accurate probiotic gene literature data through two types of review: BIOBERT model judgment and manual review.<br><br>
+            (ii) Establish a database that includes a total of 13 fields, namely gene_id, article_title, abstract, unique_id, sequence_source, gene_name, function_description, species, exact_strain, doi, amino_acid_sequence, nucleotide_sequence, Strict. The field content comes from Uniprot, NCBI, and ENA (European Nucleotide Archive).<br><br>
+            (iii) Establish a website to enable browsing, searching (using the four fields of genename, functiondescription, specifications, and doi), submitting data, analyzing, and downloading.  <br>      
+        </p>
+       
+        <h1>Authors</h1>
+        <p>
+            <li>Weicheng Li#,  Gaifang Dong#, Jiaqi Sun#, Yang Yang#, Qiong Wu, Heping Zhang, Zhihong Sun<sup>*</sup>
+            </li>
+        </p>
+        
+        <h1>Contact</h1>
+        <p>
+            If you have any questions or suggestions about the PGDB, do not hesitate to contact us.
+        </p>
+            
+        <ul style="padding: 0; margin: 0; list-style-position: inside;">
+            <li style="display: list-item; margin-right: 10px;"><a href="mailto:2023212100033@emails.imau.edu.cn">YangYang</a></li>
+            <li style="display: list-item; margin-right: 10px;"><a href="mailto:liweicheng0011@163.com">Weicheng Li</a></li>
+
+        </ul>
+    </div>
+</div>
+        
+        
+ 
+<footer style="background-color: white; color: black; display: flex; align-items: center; justify-content: center;">
+    <p style="margin: 0; margin-right: 10px;">Copyright &copy; 2024&nbsp;&nbsp;
+        <a href="http://www.dong-group.cn/" target="_blank" style="color: blue; text-decoration: none;">Dong's Group</a>&nbsp;&nbsp;
+
+        <a href="https://kyc.imau.edu.cn/info/1250/4468.htm" target="_blank" style="color: blue; text-decoration: none;">Heping Zhang's Team</a>
+
+    </p>
+    <!-- <img src="../static/images/lab.jpg" alt="Lab Image" style="width:100px; height:auto;"> -->
+</footer>
+
+</body>
+</html>
